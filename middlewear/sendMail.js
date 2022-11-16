@@ -5,7 +5,6 @@ const { createInvoice } = require("../middlewear/createInvoice")
 exports.sendMail = async (req, res, next) => {
 try {
 
-
   const email = req.body.email
   console.log(email)
   // Generate test SMTP service account from ethereal.email
@@ -44,7 +43,7 @@ try {
   // Preview only available when sending through an Ethereal account
   console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
   return res.status(200).send({
-    msg: "Invoice creates and mail sent"
+    msg: "Invoice created and mail sent"
 })
 } catch (error) {
 console.log(error.message)

@@ -2,7 +2,8 @@ var easyinvoice = require('easyinvoice');
 var fs = require('fs');
 
 exports.createInvoice = async (req, res, next) => {
-
+    console.log("createInvoiec")
+    try {
         const [products] = req.body.products
 
         //console.log(req.body.products)
@@ -121,6 +122,11 @@ exports.createInvoice = async (req, res, next) => {
             fs.writeFileSync("invoice.pdf", result.pdf, 'base64');
         });
         console.log("Invoice Created")
-        
-       next()
+    } catch (error) {
+        return res.status(401).send({
+            msg: "Invoice creation Failed",
+            error: error.message
+        })
+    }
+        next()
 }

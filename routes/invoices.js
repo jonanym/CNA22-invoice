@@ -17,10 +17,12 @@ router.post('/', async(req, res) => {
     
 })
 
-router.post('/createInvoice', createInvoice, sendMail, async(req, res) => {
+router.post('/createInvoice',createInvoice, sendMail, async(req, res) => {
     try {
+        await sendMail(req)
+        await createInvoice(req)
         //res.send("invoice created and sent to: " + req.body.email)
-        res.send({msg: "mail" + sendMail})
+        res.send({msg: "mail"})
     } catch (error) {
         res.status(500).send({ msg: error.message })
     }
