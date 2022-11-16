@@ -43,7 +43,8 @@ try {
   // Preview only available when sending through an Ethereal account
   console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
   return res.status(200).send({
-    msg: "Invoice created and mail sent"
+    msg: "Invoice created and mail sent",
+    preview_link: nodemailer.getTestMessageUrl(info)
 })
 } catch (error) {
 console.log(error.message)
