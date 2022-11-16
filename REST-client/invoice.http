@@ -1,0 +1,52 @@
+@baseURL = http://localhost:3030
+
+###
+
+POST {{baseURL}}/invoice/createInvoice
+Content-Type: application/json
+
+{
+	"product": "aaasfmid56758r9347462358",
+    "data": "data data"
+}
+
+###
+
+GET {{baseURL}}/invoice
+
+
+###
+
+POST {{baseURL}}/invoices/createInvoice
+Content-Type: application/json
+
+{
+    "date": "2022-11-1",
+    "products": [
+        {
+        "product_id": "12345",
+        "productName": "BeerBrosSpecial",
+        "amount": 4,
+        "price": "8.45",
+        "warehouse": "jees"
+        }, 
+        {
+        "product_id": "12345",
+        "productName": "BeerBros Sour",
+        "amount": 5,
+        "price": "8.45",
+        "warehouse": "jees"
+        }
+    ],  
+    "firstName": "Mr.Kekko",
+    "lastName": "BarSS",
+    "adress": "Jan-Magnussons Plats 2",
+    "postCode": "00560",
+    "postalDistrict": "Helsinki",
+    "country": "Finland",
+    "phoneNumber": "0451240567",
+    "email": "fooo.barsson123@gmail.com",
+    "orderType": "Home delivery",
+    "payment": "Visa"
+    
+}
