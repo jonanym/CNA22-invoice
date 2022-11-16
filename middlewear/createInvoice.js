@@ -113,7 +113,7 @@ exports.createInvoice = async (req, res, next) => {
             },}
         };
 
-        easyinvoice.createInvoice(data, function (result) {
+        await easyinvoice.createInvoice(data, function (result) {
             /*  
                 5.  The 'result' variable will contain our invoice as a base64 encoded PDF
                     Now let's save our invoice to our local filesystem so we can have a look!

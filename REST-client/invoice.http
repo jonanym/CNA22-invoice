@@ -2,16 +2,6 @@
 
 ###
 
-POST {{baseURL}}/invoice/createInvoice
-Content-Type: application/json
-
-{
-	"product": "aaasfmid56758r9347462358",
-    "data": "data data"
-}
-
-###
-
 GET {{baseURL}}/invoices
 
 
