@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/3160fe61-4f04-48b7-b32a-e29b453e0ae8/AppServices/subscriptions/3160fe61-4f04-48b7-b32a-e29b453e0ae8/resourceGroups/DefaultResourceGroup-NEU/providers/Microsoft.Web/sites/CNA22-Invoice",
+    "appService.deploySubpath": "."
+}

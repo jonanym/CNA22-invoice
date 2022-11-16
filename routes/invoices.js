@@ -4,7 +4,7 @@ const router = express.Router()
 const { sendMail } = require("../middlewear/sendMail")
 const { createInvoice } = require("../middlewear/createInvoice")
 
-router.get('/', (req, res) => {
+router.get('/invoices', (req, res) => {
     res.send("Hello from invoice")
 })
 

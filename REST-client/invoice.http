@@ -12,7 +12,7 @@ Content-Type: application/json
 
 ###
 
-GET {{baseURL}}/invoice
+GET {{baseURL}}/invoics
 
 
 ###

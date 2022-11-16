@@ -120,6 +120,7 @@ exports.createInvoice = async (req, res, next) => {
             */
             fs.writeFileSync("invoice.pdf", result.pdf, 'base64');
         });
+        console.log("Invoice Created")
         
        next()
 }
