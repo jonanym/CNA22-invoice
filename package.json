@@ -25,12 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jonanym/CNA22-invoice.git"
+    "url": "git+https://github.com/Arcada-Cloud-Native-Apps-22/cna22-invoicing"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jonanym/CNA22-invoice/issues"
   },
-  "homepage": "https://github.com/jonanym/CNA22-invoice#readme"
+  "homepage": "https://github.com/Arcada-Cloud-Native-Apps-22/cna22-invoicing#readme"
 }
